@@ -1,215 +1,81 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
 
-* {
-  box-sizing: border-box;
+:root{
+  --dark-violet: hsl(256, 26%, 20%);
+  --grayish-blue: hsl(216, 30%, 68%);
+  --very-dark-violet: hsl(270, 9%, 17%);
+  --dark-grayish-violet: hsl(273, 4%, 51%);
+  --very-light-gray: hsl(0, 0%, 98%);
+}
+
+*{
+  font-family: 'Karla', sans-serif;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-transform: capitalize;
+  transition: all .2s linear;
 }
 
-body {
-  display: block;
-  background: white;
-  font-family: "Karla", sans-serif;
-  font-size: 16px;
+*::selection{
+  background: var(--dark-grayish-violet);
+  color: var(--very-light-gray);
 }
 
-.header {
-  background-color: white;
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
 }
-/* Styling the Navigation bar */
-nav {
-  background-color: white;
+
+header{
   width: 100%;
-  height: 70px;
-}
-nav .navbar {
-  height: 100%;
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  position: fixed;
+  top: 2rem;
+  left: 0;
+  padding: 0 2rem;
+  /* background: var(--very-light-gray); */
+  z-index: 1000;
+}
+
+header .logo{
+  font-size: 3rem;
+  padding: 1rem 4rem;
+}
+
+header .navbar ul{
+  display: flex;
   align-items: center;
-  margin: auto;
-  padding: 0px 100px;
-}
-
-nav .nav-bar.nav-links .links {
-  display: flex;
-}
-
-.nav-links .links {
-  display: flex;
-  position: relative;
-  height: 70px;
-  align-items: center;
-  padding: 0 14px;
-}
-
-.nav-logo {
-  color: hsl(273, 4%, 51%);
-}
-
-.nav-links-list {
-  display: flex;
   justify-content: space-between;
   list-style: none;
-  text-decoration: none;
-  color: hsl(273, 4%, 51%);
+}
+
+header .navbar ul li a{
+  font-size: 2rem;
+  color: var(--dark-grayish-violet);
   font-weight: 700;
   text-transform: uppercase;
-  width: 100%;
-  padding: 1.5rem;
-}
-
-.nav-links-list:hover {
-  color: hsl(256, 26%, 20%);
-  transition: all 0.2s ease-out;
-  cursor: pointer;
-}
-.links {
-  list-style: none;
-}
-
-.nav-links-list-btn {
-  padding: 10px 30px;
-  color: hsl(256, 26%, 20%);
-  border: 3px solid hsl(273, 4%, 51%);
-  font-weight: 600;
-}
-
-.nav-links-list-btn:hover {
-  color: hsl(273, 4%, 51%);
-}
-
-/* Styling the Main section */
-.main-1 {
-  width: 100%;
-  height: 500px;
-  background: hsl(256, 26%, 20%);
-  display: flex;
-}
-
-.para-text {
-  color: white;
-  display: flex;
-  flex-direction: column;
-  /* width: 50%; */
-  margin: auto;
-  text-align: left;
-  justify-content: space-evenly;
-  margin-left: 200px;
-}
-
-.para-text h1 {
-  font-family: "DM Serif Display", sans-serif;
-  font-weight: 500;
-  text-align: left;
-  font-size: 50px;
-  margin-bottom: 10px;
-}
-
-.para-text p {
-  margin-bottom: 10px;
-}
-
-.para-text a {
+  padding: 2rem;
+  margin-left: 2rem;
   text-decoration: none;
-  text-transform: uppercase;
-  padding: 10px 20px;
-  color: white;
-  border: 3px solid white;
-  font-weight: 600;
-  text-align: center;
-  width: 150px;
-  margin-top: 10px;
 }
 
-.para-text a:hover {
-  color: black;
+header .navbar ul li a:hover {
+  color: var(--dark-violet);
   transition: all 0.2s ease-out;
   cursor: pointer;
 }
 
-#main-image {
-  width: 500px;
-  height: 600px;
-  margin: 60px 260px 0 0;
-}
-
-.main-2 {
-  display: flex;
-  flex-direction: column;
-  /* background-color: green; */
-  margin: 300px 260px 0 200px;
-}
-
-.main-2 > h2 {
-  font-family: "DM Serif Display", sans-serif;
-  font-weight: 500;
-  text-align: left;
-  font-size: 50px;
-  margin-bottom: 10px;
-  max-width: 1150px;
-}
-
-.about {
-  display: flex;
-  justify-content: space-between;
-}
-
-.about-1 .about-2 .about-3 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.about-image {
-  width: 50px;
-  margin-bottom: 10px;
-}
-
-.about h3 {
-  font-family: "DM Serif Display", sans-serif;
-  font-weight: 500;
-  margin-bottom: 10px;
-}
-
-.about p {
-  color: hsl(273, 4%, 51%);
-  margin-bottom: 10px;
-  margin-right: 25px;
-}
-
-.main-3 {
-  background: hsl(256, 26%, 20%);
-  height: 200px;
-  width: 1300px;
-  margin: 100px 260px 100px 200px;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.main-3 h2 {
-  font-family: "DM Serif Display", sans-serif;
-  font-weight: 500;
-  margin-left: 50px;
-  width: 400px;
-  font-size: 40px;
-}
-
-.main-3 a {
-  text-decoration: none;
+header .navbar .btn{
   padding: 10px 30px;
-  color: white;
-  border: 3px solid white;
+  color: var(--dark-grayish-violet);
+  border: 3px solid var(--dark-grayish-violet);
   font-weight: 600;
-  margin-right: 100px;
-  text-transform: uppercase;
-  font-size: 20px;
 }
 
-.main-3 a:hover {
-  color: black;
-  transition: all 0.2s ease-out;
-  cursor: pointer;
+header .navbar .btn:hover{
+  color: var(--dark-violet);
 }
