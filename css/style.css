@@ -1,0 +1,42 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-bar {
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 20px 80px;
+}
+
+.nav-links {
+  /* background-color: green; */
+  /* width: 40%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+}
+
+.nav-links a{
+  padding: 0 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: grey;
+}
+
+a:hover{
+  cursor: pointer;
+}
+
+.button {
+  border: 1px solid grey;
+  padding: 5px;
+}
