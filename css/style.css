@@ -24,6 +24,8 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 20px 80px; 
+  position: fixed;
+  top: 0;
 }
 
 nav{
