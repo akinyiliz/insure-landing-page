@@ -41,13 +41,14 @@ nav li{
   text-transform: uppercase;
 } 
 
-nav > ul > li > a{
+li > a{
   text-decoration: none;
   color: var(--Dark-Grayish-Violet);
   font-family: 'DM Serif Display', sans-serif;
   font-weight: 400;
 }
-nav > ul > li > a:hover{
+
+li > a:hover{
   cursor: pointer;
 }
 
